@@ -1,0 +1,46 @@
+.swiperFotos {
+    overflow: visible;
+
+    .swiper-slide {
+        aspect-ratio: 600/520;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+.about-fotos-section {
+    overflow: hidden;
+    background-color: #E4E4E7;
+
+    &.v2 {
+        padding-top: 0;
+
+        .swiper-slide {
+            aspect-ratio: 640/420;
+            width: 100%;
+            max-width: 640px;
+        }
+    }
+
+    .sw-pagin-fotos {
+        position: static !important;
+        transform: none !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin-top: 40px;
+
+        .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+            background: #727272;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .about-fotos-section {
+        display: none;
+    }
+}

@@ -1,0 +1,310 @@
+.product-detail-baner {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 740px 520px;
+    gap: 10px 30px;
+
+    .help-container {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.mySwiper {
+    width: 100%;
+    margin: 0;
+    background-color: #FFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 20px;
+
+    .swiper-slide {
+        width: 100%;
+        padding: 40px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            object-fit: contain;
+            object-position: center;
+            aspect-ratio: 740/614;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &.v2 {
+        .swiper-slide {
+            padding: 0;
+
+            img {
+                object-fit: cover;
+                aspect-ratio: 740/540;
+            }
+        }
+    }
+}
+
+.product-detail-baner-right-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border: 1px solid #D1D5DB;
+    border-radius: 20px;
+    padding: 30px 40px;
+
+    .default {
+        margin: 0 0 35px;
+    }
+
+    .min-vol {
+        margin-top: 15px;
+        color: #727272;
+    }
+
+    .price-title {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 25px;
+
+        span {
+            font-family: Geologica;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+        }
+
+        p {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 42px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+        }
+    }
+
+    .h1 {
+        font-family: Geologica;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 30px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .btn-cont-v11 {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .button,
+        .button_v2 {
+            width: 100%;
+        }
+
+        .button_v2 {
+            background: none;
+            border: 1px solid #0F0F0F;
+
+            &:hover {
+                background: #0F0F0F;
+            }
+        }
+    }
+}
+
+.specifications {
+    margin-bottom: 25px;
+
+    li {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        border-bottom: 1px solid #D1D5DB;
+
+        span {
+            font-family: Geologica;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #727272;
+        }
+
+        p {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-align: end;
+        }
+    }
+}
+
+.mySwiper2 {
+    width: 100%;
+    margin: 0;
+
+    .swiper-slide {
+        width: fit-content;
+        cursor: pointer;
+        border: 0.5px solid #D1D5DB;
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: #FFF;
+        padding: 5px;
+
+        &.swiper-slide-thumb-active {
+            border: 0.5px solid #0F0F0F;
+        }
+
+        img {
+            aspect-ratio: 100/82;
+            height: 82px;
+            width: 100px;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &.v2 {
+        .swiper-slide {
+            padding: 0;
+
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 1360px) {
+    .product-detail-baner {
+        grid-template-columns: 1fr;
+        max-width: 740px;
+    }
+
+    .product-detail-baner-right-container {
+        margin-top: 20px;
+    }
+
+    .mySwiper2 {
+        grid-row: 2/3;
+    }
+}
+
+@media (max-width: 500px) {
+    .product-detail-baner-section {
+        padding: 0;
+    }
+
+    .product-detail-baner {
+        padding: 0;
+        display: grid;
+        gap: 0;
+    }
+
+    .mySwiper {
+        border-radius: 0;
+
+        .swiper-slide {
+            width: 100%;
+            padding: 16px 20px;
+
+            img {
+                aspect-ratio: 375/311;
+            }
+        }
+    }
+
+    .product-detail-baner-right-container {
+        border-radius: 0;
+        padding: 20px;
+        margin-top: 0;
+
+        .h1 {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+        }
+    }
+
+    .specifications {
+        margin-bottom: 25px;
+
+        li {
+            span {
+                font-family: Geologica;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+
+            p {
+                font-family: Geologica;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: end;
+            }
+        }
+    }
+
+    .mySwiper2 {
+        width: 100%;
+        margin: 0;
+        padding: 10px var(--def-padding) 20px;
+
+        .swiper-slide {
+            width: fit-content;
+            cursor: pointer;
+            border: 0.5px solid #D1D5DB;
+            border-radius: 16px;
+            background-color: #FFF;
+            padding: 5px;
+
+            &.swiper-slide-thumb-active {
+                border: 0.5px solid #0F0F0F;
+            }
+
+            img {
+                aspect-ratio: 100/82;
+                height: 82px;
+                width: 100px;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+}

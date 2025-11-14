@@ -1,0 +1,132 @@
+.main-baner-card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    .def_div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .h2,
+    .default * {
+        color: var(--white-color);
+    }
+
+    .default {
+        color: var(--white-color);
+        margin: 0;
+    }
+
+    .h2 {
+        font-family: Geologica;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 60px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+
+    .btn-cont {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: fit-content;
+
+        .button {
+            width: fit-content;
+            margin: 0;
+        }
+    }
+
+}
+
+@media (max-width: 1550px) {
+    .swiperBaner {
+
+        .sw-btn-cont-help {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .main-baner-card .h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 720px) {
+    .main-baner-card .h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-baner-card .h2 {
+        font-family: Geologica;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        text-transform: uppercase;
+    }
+
+    .main-baner-card {
+        min-height: 560px;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    
+        .button, .button_v2 {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+            max-width: 200px;
+            font-size: 16px;
+            min-height: 50px;
+        }
+
+        .def_div {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+    
+        .h2,
+        .default * {
+            color: var(--white-color);
+        }
+    
+        .default {
+            color: var(--white-color);
+            margin: 0;
+        }
+    
+        .btn-cont {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .button {
+                width: 100%;
+            }
+        }
+    }
+}

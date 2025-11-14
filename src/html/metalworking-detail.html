@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сварсиб</title>
+    <link rel="stylesheet" href="./fonts/Geologica.css" />
+    <link rel="stylesheet" href="./fonts/Inter.css" />
+
+    <link rel="stylesheet" href="./css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="shortcut icon" href="./img/1762420028.ico" type="image/x-icon">
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+    <div id="is-admin">
+
+    </div>
+
+    @@include('blocks/overlay.html')
+    @@include('blocks/popup-form.html')
+    @@include('blocks/popup-form-zaipis.html')
+    @@include('blocks/popup-form-bye.html')
+    @@include('blocks/popupCheck.html')
+    @@include('blocks/load.html')
+    @@include('blocks/header.html')
+    <main>
+        <div class="bread flex padding" id="bread">
+            <ul class="def_div">
+                <li>
+                    <a href="/" title="Главная" itemprop="item">
+                        Главная
+                    </a>
+                </li>
+                <li class="fix-opacity">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.24271 0.500004L8.48535 4.74265L4.24271 8.98529" stroke="#9CA3AF"
+                            stroke-linecap="round" />
+                    </svg>
+                </li>
+                <li>
+                    <a href="/" title="Главная" itemprop="item">
+                        Металлообработка
+                    </a>
+                </li>
+                <li class="fix-opacity">
+                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.24271 0.500004L8.48535 4.74265L4.24271 8.98529" stroke="#9CA3AF"
+                            stroke-linecap="round" />
+                    </svg>
+                </li>
+                <li class="fix-opacity">
+                    Рубка листового металла на гильотине
+                </li>
+            </ul>
+        </div>
+        <h1 class="title v3">
+            Рубка листового металла на гильотине
+        </h1>
+        @@include('blocks/metalworking-detail-baner.html')
+        @@include('blocks/metalworking-detail-special.html')
+        @@include('blocks/metalworking-detail-advantages.html')
+        @@include('blocks/metalworking-detail-material-list.html')
+        @@include('blocks/metalworking-detail-equipment.html')
+        @@include('blocks/metalworking-detail-other.html')
+        @@include('blocks/main-stage.html')
+        @@include('blocks/metalworking-our-production.html')
+        @@include('blocks/main-desc-form.html')
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/addSwiper.js"></script>
+    <script src="./js/copyElements.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

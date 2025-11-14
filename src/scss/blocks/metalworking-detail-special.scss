@@ -1,0 +1,109 @@
+.metalworking-detail-special {
+    margin-bottom: 40px;
+    background-color: #FFF;
+    border-radius: 20px;
+    border: 1px solid #D1D5DB;
+    padding: 40px;
+
+    h2 {
+        font-family: Geologica;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 30px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        * {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 30px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+        }
+        
+        span {
+            color: var(--link-color);
+        }
+    }
+
+    .default {
+        margin: 0;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    ul:not(.default ul) {
+        width: 100%;
+        max-width: 700px;
+
+        li {
+            padding: 15px 0;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            border-bottom: 1px solid #D1D5DB;
+
+            span {
+                color: #727272;
+            }
+
+            p {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .metalworking-detail-special {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 20px;
+
+        &.v2 {
+            margin-top: 0;
+        }
+
+        h2 {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+
+            * {
+                font-family: Geologica;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 24px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+            }
+        }
+
+        ul:not(.default ul) {
+            li {
+                flex-direction: column;
+                gap: 5px;
+
+                span {
+                    color: #727272;
+                }
+
+                p {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

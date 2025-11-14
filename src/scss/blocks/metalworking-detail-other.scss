@@ -1,0 +1,84 @@
+.metalworking-detail-other {
+
+    .swiperMetalworkingDetailOther {
+        display: none;
+
+        * {
+            color: var(--white-color);
+        }
+    }
+
+    h2 {
+        text-align: center;
+
+        span {
+            color: var(--link-color);
+        }
+    }
+}
+
+.swiperMetalworkingDetailOther-sw-pagin {
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    justify-content: center;
+    margin-top: 35px;
+
+    .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+        background: #0F0F0F;
+    }
+}
+
+.metalworking-detail-other-section {
+    overflow: hidden;
+}
+
+@media (max-width: 500px) {
+    .metalworking-detail-other {
+
+        h2 {
+            margin-bottom: 16px;
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+
+            * {
+                font-family: Geologica;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 24px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0%;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        .swiperMetalworkingDetailOther {
+            display: block;
+            overflow: visible;
+
+            .main-services-item {
+                width: 100%;
+                max-width: 320px;
+
+                .img {
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+
+        .metalworking-content-grid {
+            display: none;
+        }
+    }
+
+
+}

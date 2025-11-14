@@ -1,0 +1,154 @@
+.main-about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .def_title {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0;
+
+        img {
+            aspect-ratio: 245/130;
+            width: 245px;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .h2 {
+            span {
+                display: none;
+                color: var(--link-color);
+            }
+        }
+    }
+}
+
+.main-about-cont {
+    display: flex;
+    gap: 30px;
+
+    .left {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        max-width: 543px;
+        border-radius: 20px;
+    }
+
+    .right {
+        border-radius: 20px;
+        background-color: #E4E4E7;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        *:not(.back-img) {
+            position: relative;
+            z-index: 1;
+        }
+
+        .h3 {
+            font-family: Geologica;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+
+        .default {
+            margin: 0;
+            ul, ol {
+                margin-left: 10px;
+                gap: 15px;
+            }
+
+            .fix-ul {
+                max-width: 75%;
+            }
+        }
+    }
+
+    .back-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        object-fit: contain;
+        object-position: center;
+        aspect-ratio: 292/437;
+        width: 100%;
+        max-width: 270px;
+        z-index: 0;
+        float: right;
+    }
+}
+
+@media (max-width: 970px) {
+    .main-about-cont {
+        flex-direction: column;
+
+        .left {
+            aspect-ratio: 16/9;
+            max-width: none;
+        }
+    }
+
+    .main-about {
+        .def_title {
+    
+            img {
+               display: none;
+            }
+    
+            .h2 {
+                span {
+                    display: contents;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main-about-cont {
+        gap: 20px;
+    
+        .left {
+            aspect-ratio: 343/358;
+        }
+    
+        .right {
+            padding: 20px;
+    
+            .h3 {
+                font-family: Geologica;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 18px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+    
+            .default {
+                .fix-ul {
+                    max-width: 100%;
+                }
+            }
+        }
+    
+        .back-img {
+           display: none;
+        }
+    }
+}

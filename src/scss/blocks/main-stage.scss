@@ -1,0 +1,102 @@
+.main-stage-section {
+    background-color: #262626;
+    overflow: hidden;
+
+    &.v2 {
+        background: none;
+
+        .def_title {
+            color: var(--text-color);
+
+            *:not(span) {
+                color: var(--text-color);
+            }
+        }
+    }
+
+    &.v3 {
+        background-color: #262626;
+
+        .def_title {
+            color: var(--white-color);
+
+            *:not(span) {
+                color: var(--white-color);
+            }
+        }
+    }
+
+    * {
+        color: #FFF;
+    }
+
+    .def_title {
+        display: flex;
+        justify-content: center;
+        padding-left: var(--def-padding);
+        padding-right: var(--def-padding);
+        margin-bottom: 40px;
+    }
+}
+
+.main-stage {
+    width: 100%;
+}
+
+.swiperStage {
+    padding: 0 20px;
+    overflow: visible;
+    width: 100%;
+
+    .swiper-slide {
+        width: 100%;
+        max-width: 305px;
+        min-height: 400px;
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: space-between;
+
+        span {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 60px;
+            max-height: 60px;
+            min-height: 60px;
+            min-width: 60px;
+            border-radius: 50%;
+            background-color: var(--link-color);
+        }
+
+        .h3 {
+            backdrop-filter: blur(20px);
+            background-color: #0F0F0FCC;
+            border-radius: 16px;
+            padding: 16px;
+            font-family: Geologica;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 18px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+    }
+}

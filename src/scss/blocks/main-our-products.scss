@@ -1,0 +1,261 @@
+.main-our-products-section {
+    background-color: #262626;
+    overflow: hidden;
+
+    * {
+        color: var(--white-color);
+    }
+
+    .btn-bottom {
+        width: fit-content;
+    }
+
+    @media (max-width: 970px) {
+        .btn-cont.v13 {
+            display: none;
+        }
+    }
+}
+
+.main-our-products {
+    display: flex;
+    gap: 10px;
+
+    &.v2 {
+        @media (min-width: 971px) {
+            flex-direction: column;
+            gap: 40px;
+
+            .left {
+                background: none !important;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                max-width: none;
+
+                .h2 {
+                    width: 50%;
+                }
+
+                .left-bottom {
+                    width: 50%;
+                }
+
+                .button {
+                    display: none;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+
+            .sw-btn {
+                transform: rotate(180deg) translateX(100%) translateY(50%);
+
+                &.sw-btn-next {
+                    transform: rotate(0) translateY(-50%) translateX(100%);
+                }
+            }
+
+            .swiperOurProducts-sw-pagin {
+                position: static !important;
+                width: 100% !important;
+                transform: none !important;
+                justify-content: center;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .left {
+        width: 100%;
+        max-width: 520px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-between;
+        gap: 20px;
+        border-radius: 20px;
+        padding: 40px 20px 20px;
+        position: relative;
+        z-index: 2;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+
+        &.before-1::before {
+            background-color: rgba(15, 15, 15, 0.6);
+        }
+
+        .h2 {
+            position: relative;
+            z-index: 1;
+
+            span {
+                color: var(--link-color);
+            }
+        }
+
+        .left-bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+
+            p {
+                font-family: Geologica;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 24px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            .button {
+                width: 100%;
+
+            }
+        }
+    }
+
+    .right {
+        height: auto;
+    }
+}
+
+.swiperOurProducts {
+    height: 100%;
+    overflow: visible;
+
+    .swiper-slide {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        border-radius: 20px;
+        padding: 20px 20px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 520px;
+        background-position: center;
+        background-size: cover;
+        transition: .5s;
+
+        .h3 {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+        }
+    }
+
+    @media (min-width: 971px) {
+        .swiper-slide-before-active {
+            opacity: 0;
+        }
+    }
+
+
+    .sw-btn-prev {
+        left: 20px;
+        transform: rotate(180deg) translateX(0);
+    }
+
+    .sw-btn-next {
+        left: 970px;
+        right: auto;
+        transform: translateX(0);
+    }
+}
+
+.swiperOurProducts-sw-pagin {
+    bottom: auto !important;
+    top: 100% !important;
+    transform: translateY(30px) translateX(-50%) !important;
+    left: 525px !important;
+}
+
+@media (max-width: 1880px) {
+    .swiperOurProducts .sw-btn {
+        display: none;
+    }
+
+    .swiperOurProducts-sw-pagin {
+        left: 50% !important;
+    }
+}
+
+@media (max-width: 970px) {
+    .main-our-products {
+        flex-direction: column;
+    }
+
+    .main-our-products .left {
+        max-width: none;
+        min-height: 343px;
+    }
+
+    .main-our-products-section {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-our-products {
+        .left {
+            gap: 15px;
+
+            .left-bottom {
+                p {
+                    font-family: Geologica;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 16px;
+                    leading-trim: NONE;
+                    line-height: 130%;
+                    letter-spacing: 0%;
+                    vertical-align: middle;
+                }
+            }
+
+            .button {
+                font-family: Geologica;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+            }
+        }
+    }
+
+    .swiperOurProducts {
+        .swiper-slide {
+            aspect-ratio: 375/343;
+            height: fit-content;
+
+            .h3 {
+                font-family: Geologica;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+// Делай следующий блок

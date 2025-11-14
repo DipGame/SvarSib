@@ -1,0 +1,231 @@
+.main-services-section {
+    background-color: #262626;
+
+    * {
+        color: var(--white-color);
+    }
+}
+
+.main-services {
+
+    .def_title {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+
+        * {
+            width: 100%;
+            max-width: --webkit-fill-available;
+        }
+
+        p {
+            font-family: Geologica;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 20px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+    }
+}
+
+.main-services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    &.metalworking-content-grid {
+        gap: 30px;
+    }
+}
+
+.metalworking-content-grid {
+
+    .main-services-item {
+        gap: 20px;
+        background-color: #262626;
+
+        * {
+            color: var(--white-color);
+        }
+
+        .img {
+            aspect-ratio: 1/1;
+        }
+
+        .text {
+            .h3 {
+                font-family: Geologica;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 18px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }
+        }
+    }
+}
+
+.main-services-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: auto;
+    background-color: #0F0F0F;
+    padding: 10px 10px 30px;
+
+    .img {
+        aspect-ratio: 402/392;
+        height: fit-content;
+        border-radius: 16px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        padding: 0 10px;
+
+        * {
+            transition: .5s;
+        }
+
+        .h3 {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 130%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+        }
+
+        svg {
+            max-width: 60px;
+            max-height: 60px;
+            min-height: 60px;
+            min-width: 60px;
+        }
+    }
+
+    &:hover {
+        .text {
+            .h3 {
+                color: var(--link-color);
+            }
+
+            svg {
+                rect {
+                    fill: var(--link-color);
+                    fill-opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1130px) {
+    .main-services .def_title {
+        flex-direction: column;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .main-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .main-services-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .main-services {
+
+        .def_title {
+            p {
+                font-family: Geologica;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .main-services-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        &.metalworking-content-grid {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+    }
+
+    .metalworking-content-grid {
+        .main-services-item {
+            .text {
+                min-height: 60px;
+                align-items: start;
+
+                .h3 {
+                    font-family: Geologica;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 18px;
+                    leading-trim: NONE;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+    }
+
+    .main-services-item {
+        gap: 10px;
+        padding: 10px 5px 20px;
+
+        .img {
+            aspect-ratio: 155/188;
+        }
+
+        .text {
+            padding: 0 5px;
+
+            .h3 {
+                font-family: Geologica;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+            }
+
+            svg {
+                display: none;
+            }
+        }
+    }
+}

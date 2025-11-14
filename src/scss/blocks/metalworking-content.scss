@@ -1,0 +1,16 @@
+.metalworking-content {
+    
+    .sect-def-title {
+        margin: 0;
+    }
+}
+
+.metalworking-content-grid {
+    padding: 40px 0 80px;
+}
+
+@media (max-width: 500px) {
+    .metalworking-content-grid {
+        padding: 20px 0 40px;
+    }
+}

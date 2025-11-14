@@ -1,1 +1,9 @@
-# SvarSib
+https://dipgame.github.io/SvarSib/
+https://dipgame.github.io/SvarSib/about.html
+https://dipgame.github.io/SvarSib/garant.html
+https://dipgame.github.io/SvarSib/metalworking.html
+https://dipgame.github.io/SvarSib/metalworking-detail.html
+https://dipgame.github.io/SvarSib/product-detail.html
+https://dipgame.github.io/SvarSib/product-section.html
+https://dipgame.github.io/SvarSib/product-section-section.html
+https://dipgame.github.io/SvarSib/vacan.html

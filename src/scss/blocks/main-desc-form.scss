@@ -1,0 +1,122 @@
+.main-desc-form-section {
+    background-color: #262626;
+
+
+}
+
+
+.main-desc-form {
+    display: flex;
+    gap: 30px;
+
+    .left {
+        width: 100%;
+        max-width: 520px;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        height: auto;
+    }
+
+    .popup__container {
+        overflow: hidden;
+        max-height: none;
+
+        .popupForm-title {
+            text-align: left;
+        }
+
+        .popup-file-label {
+            svg {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1290px) {
+    .main-desc-form .popup__container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 970px) {
+    .main-desc-form {
+        flex-direction: column;
+
+        .left {
+            aspect-ratio: 1/1;
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main-desc-form {
+        gap: 20px;
+
+        .popup__container {
+            .popupForm-title {
+                font-family: Geologica;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 24px;
+                leading-trim: NONE;
+                line-height: 130%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+
+                * {
+                    font-family: Geologica;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 24px;
+                    leading-trim: NONE;
+                    line-height: 130%;
+                    letter-spacing: 0%;
+                    text-transform: uppercase;
+                }
+            }
+
+            .popup-file-container {
+                width: 100%;
+
+                svg {
+                    display: none;
+                }
+
+                .popup-file-label {
+                    display: flex;
+                    gap: 12px;
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 20px;
+
+                    svg {
+                        display: block;
+                        position: static;
+                        transform: none;
+                    }
+                }
+            }
+
+
+        }
+
+
+        .popup__container .checkbox * {
+            font-family: Geologica;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+        }
+
+    }
+
+    .main-desc-form .popup__container .popup-file-container {
+        margin-bottom: 20px;
+    }
+}

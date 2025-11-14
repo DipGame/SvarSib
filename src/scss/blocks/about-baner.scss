@@ -1,0 +1,103 @@
+.about-baner-section {
+    padding: 100px var(--def-padding) 40px;
+
+    &::before {
+        background-color: #0f0f0f40;
+    }
+
+    * {
+        color: var(--white-color);
+    }
+}
+
+.about-baner {
+    position: relative;
+    z-index: 1;
+    min-height: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+    * {
+        text-align: center;
+    }
+
+    .h2 {
+        font-family: Geologica;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 60px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .default {
+        font-family: Geologica;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 0;
+
+        * {
+            font-family: Geologica;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .about-baner-section {
+        padding: 120px var(--def-padding) 40px;
+    }
+
+    .about-baner {
+        min-height: 400px;
+        gap: 30px;
+
+        .h2 {
+            font-size: 32px;
+        }
+
+        .default {
+            font-size: 18px;
+
+            * {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about-baner {
+        min-height: 400px;
+        gap: 30px;
+
+        .h2 {
+            font-size: 24px;
+        }
+
+        .default {
+            font-size: 18px;
+
+            * {
+                font-size: 18px;
+            }
+        }
+    }
+}

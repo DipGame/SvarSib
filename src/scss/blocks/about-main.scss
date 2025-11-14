@@ -1,0 +1,40 @@
+.about-main-video {
+    border-radius: 20px;
+    aspect-ratio: 1290/600;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .main-about-cont {
+        min-height: 543px;
+    }
+}
+
+.main-about-cont {
+    &.v2 {
+        flex-direction: row-reverse;
+
+        .right {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .main-about-cont {
+        &.v2 {
+            flex-direction: column;
+        }
+    }
+
+    .about-main {
+        gap: 20px;
+    }
+}

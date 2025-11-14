@@ -1,0 +1,60 @@
+.metalworking-detail-material-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 120px;
+
+    h2 {
+        font-family: Geologica;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 32px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+    }
+}
+
+.metalworking-detail-material-list-item {
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #D1D5DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+
+@media (max-width: 500px) {
+    .metalworking-detail-material-list {
+        gap: 20px;
+        margin-bottom: 40px;
+
+        h2 {
+            font-family: Geologica;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 24px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+        }
+    }
+
+    .metalworking-detail-material-list-item {
+        font-family: Geologica;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+    }
+
+    .metalworking-detail-material-list-grid {
+        grid-template-columns: 1fr;
+    }
+}

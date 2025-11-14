@@ -1,0 +1,35 @@
+.metalworking-our-production-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.metalworking-our-production-item {
+    aspect-ratio: 1/1;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: .5s;
+
+    &:hover {
+        transform: scale(.95);
+    }
+}
+
+@media (max-width: 970px) {
+    .metalworking-our-production-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .metalworking-our-production-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .metalworking-our-production .def_title {
+        margin-bottom: 20px;
+    }
+}
